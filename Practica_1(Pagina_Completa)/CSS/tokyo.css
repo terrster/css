@@ -36,3 +36,39 @@ aside > .c_link{
     text-align: center;
 
 }
+section{    
+    width: 80%;
+    height: 100%;
+    float: left;
+    padding-top: 3%;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+h3{
+    font-size: 60px;    
+    width: 90%;
+    height: fit-content;
+    margin: 10px auto;
+    overflow: hidden;
+}
+.t_principal{
+    font-size: 22px;
+    width: 90%;
+    height: fit-content;
+    margin: 10px auto;
+    text-align: justify;
+}
+.t_principal_1{
+    font-size: 22px;
+    width: 90%;
+    height: fit-content;
+    margin: 10px auto 0px auto;
+    text-align: justify;
+}
+iframe{
+    display: block;
+    margin: 0px auto;
+    height: 42%;
+    position: relative;
+
+}
