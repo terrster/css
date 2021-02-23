@@ -1,3 +1,75 @@
 *{
-    background: black;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+header{
+    background-color: #666666;
+    height: 10vh;    
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.contenedor{
+    height: 83vh;
+    background-color: black;
+    
+}
+aside{
+    background-color: white;
+    width: 20%;
+    height: 100%;
+    padding-top: 15%;
+    float: left;
+
+}
+/* afectara a todos los elementos de .contenedorlink que existan dentrod e un aside */
+aside > .c_link{
+    
+    margin: auto;    
+    width: 80%;
+    height: 20%;
+}
+.c_link > a{
+    display: block;
+    font-size: 25px;
+    color: teal;
+    margin: 2px 0px;
+    text-align: center;
+}
+section{    
+    width: 80%;
+    height: 100%;
+    float: left;
+    padding-top: 3%;
+    background-color: #f1f1f1;
+}
+h3{
+    font-size: 60px;    
+    width: 90%;
+    margin: 10px auto;
+}
+.t_principal{
+    font-size: 22px;
+    width: 90%;
+    margin: 10px auto;
+    text-align: justify;
+}
+iframe{
+    display: block;
+    margin: auto;
+}
+footer{
+    height: 7vh;
+    background-color: #666666;
+}
+footer > p{
+    display: block;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    padding: auto;
 }
