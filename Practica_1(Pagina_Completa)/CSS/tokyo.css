@@ -5,7 +5,7 @@
 
 }
 header{
-    background-color: #666666;
+    background-color: #161925;
     height: 10vh;    
 }
 h1{
@@ -14,24 +14,19 @@ h1{
     font-size: 50px;
 }
 .contenedor{
-    height: 83vh;
-    background-color: black;
-    
+    height: 83vh;    
 }
 aside{
     background-color: white;
     width: 20%;
     height: 100%;
+    float: right;
     padding-top: 15%;
-    float: left;
-
 }
-/* afectara a todos los elementos de .contenedorlink que existan dentrod e un aside */
 aside > .c_link{
-    
     margin: auto;    
     width: 80%;
-    height: 20%;
+    height: 80%;
 }
 .c_link > a{
     display: block;
@@ -39,6 +34,7 @@ aside > .c_link{
     color: teal;
     margin: 2px 0px;
     text-align: center;
+
 }
 section{    
     width: 80%;
@@ -46,29 +42,48 @@ section{
     float: left;
     padding-top: 3%;
     background-color: #f1f1f1;
+    overflow: hidden;
 }
 h3{
     font-size: 60px;    
     width: 90%;
+    height: fit-content;
     margin: 10px auto;
 }
 .t_principal{
     font-size: 22px;
     width: 90%;
+    height: fit-content;
     margin: 10px auto;
+    text-align: justify;
+}
+.t_principal_1{
+    font-size: 22px;
+    width: 90%;
+    height: fit-content;
+    margin: 10px auto 0px auto;
     text-align: justify;
 }
 iframe{
     display: block;
-    margin: auto;
+    margin: 0px auto;
+    height: 42%;
+    position: relative;
+
 }
 footer{
     height: 7vh;
-    background-color: #666666;
+    background-color: #161925;
 }
 footer > p{
+    display: inline-block;
     color: white;
     font-size: 30px;
     text-align: center;
-    margin: auto;
+    width: 90%;
+    height: min-content;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5.1070775px;
+    font-weight: 900;
 }
