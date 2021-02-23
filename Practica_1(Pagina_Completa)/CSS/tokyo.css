@@ -49,7 +49,6 @@ h3{
     width: 90%;
     height: fit-content;
     margin: 10px auto;
-    overflow: hidden;
 }
 .t_principal{
     font-size: 22px;
@@ -71,4 +70,20 @@ iframe{
     height: 42%;
     position: relative;
 
+}
+footer{
+    height: 7vh;
+    background-color: #161925;
+}
+footer > p{
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    width: 90%;
+    height: min-content;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5.1070775px;
+    font-weight: 900;
 }
