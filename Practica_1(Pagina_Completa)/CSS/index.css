@@ -2,6 +2,7 @@
     margin: 0;
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
+
 }
 header{
     background-color: #666666;
@@ -66,10 +67,8 @@ footer{
     background-color: #666666;
 }
 footer > p{
-    display: block;
     color: white;
     font-size: 30px;
     text-align: center;
     margin: auto;
-    padding: auto;
 }
