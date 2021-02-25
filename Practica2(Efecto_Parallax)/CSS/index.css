@@ -15,7 +15,6 @@ section{
     background-repeat: no-repeat;
     background-size: 100vw;
     background-position: center;
-    height: 100vh;
 }
 .sec2{
     background-image: url('./../assets/6.jpg');
@@ -28,4 +27,18 @@ section{
     background-repeat: no-repeat;
     background-size: 100vw;
     background-position: center;
+}
+.sectext{
+    height: auto;
+    padding: 50px 100px;
+}
+.sectext > h1{
+    margin: 0;
+    padding: 0;
+    font-size: 5vh;
+    color: tomato;
+}
+.sectext > p{
+    font-size: 2vh;
+    text-align: justify;
 }
