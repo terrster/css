@@ -15,21 +15,24 @@ section{
     background-repeat: no-repeat;
     background-size: 100vw;
     background-position: center;
+    background-attachment: fixed;
 }
 .sec2{
     background-image: url('./../assets/6.jpg');
     background-repeat: no-repeat;
     background-size: 100vw;
     background-position: center;
+    background-attachment: fixed;
 }
 .sec3{
     background-image: url('./../assets/7.jpg');
     background-repeat: no-repeat;
     background-size: 100vw;
     background-position: center;
+    background-attachment: fixed;
 }
 .sectext{
-    height: auto;
+    height: auto; /* con auto se ajusta automaticamentye la altura a los textos */
     padding: 50px 100px;
 }
 .sectext > h1{
