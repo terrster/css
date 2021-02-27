@@ -1,0 +1,97 @@
+*{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+}
+body{
+    background-color: white;
+    width: 100%;
+}
+.header{
+    width: 100%;
+    height: 20vh;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+span{
+    color: greenyellow;
+}
+header > h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 7rem;
+    order: 1
+}
+header > p{
+    order: 2;
+}
+.nav{
+    display: flex;
+    height: 5vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav > ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.nav > ul > li{
+    display: block;
+    height: 100%;
+
+    padding: 1em;
+    margin: 0;
+    color: white;
+    background-color: greenyellow;
+}
+.slide{
+    height: 35vh;
+    background-image: url('./../Assets/noche.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: center;
+    overflow: hidden;
+    margin: 0;
+}
+/* .borde{
+    width: 98%;
+    height: 90%;
+    border: 5px solid white;
+    background-color: tomato;
+    margin: 0%;
+} */
+.cont{
+    padding: 0;
+    margin: 0;
+    height: 40vh ;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.online{
+    width: 25vw;
+    height: 90%;
+    background-color: tomato;
+}
+.cir{
+    width: 25vw;
+    height: 90%;
+    background-color: violet;
+}
+.fac{
+    width: 25vw;
+    height: 90%;
+    background-color: yellow;
+}
+.revista{
+    width: 25vw;
+    height: 90%;
+    background-color: turquoise;
+}
