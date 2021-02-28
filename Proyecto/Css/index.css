@@ -185,6 +185,7 @@ a{
     align-items: center;
     justify-content: center;
     background-color: darkviolet;
+    box-shadow: 0px 1px 2px rgb(0, 0, 0);
 }
 .rad > h2{
     position: absolute;
@@ -215,10 +216,252 @@ a{
 }
 .cir{
     background-color: darkslategray;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+._to{
+    position: absolute;
+    top: 1vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+._to > h2{
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 3vw;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+    line-height: .7;
+}
+._to > p{
+    color: white;
+    margin-top: .8vw;
+    font-size: 1.5vw;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+}
+.rad2{
+    position: absolute;
+    top: 7vw;
+    width: 12vw;
+    height: 12vw;
+    border: 7px solid greenyellow;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 2px black;
+}
+.rad2 > h2{
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+    font-size: 2.2vw;
+}
+.rad2 > p{
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+    font-size: 1vw;
+}
+
+._te{
+    position: absolute;
+    width: 90%;
+    color: white;
+    margin-top: .8vw;
+    font-size: 1vw;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+    text-align: center;
+    bottom: 4vw;
+}
+._te2{
+    position: absolute;
+    width: 90%;
+    color: white;
+    margin-top: .8vw;
+    font-size: 1vw;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+    text-align: center;
+    bottom: .5vw;
+}
+._te2 > h3{
+    text-transform: uppercase;
+    color: greenyellow;
 }
 .fac{
     background-color: white;
     border: 2px solid black;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.por{
+    position: absolute;
+    top: 1vw;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.port1{
+    width: 5vw;
+    height: 5vw;
+    background-image: url('./../Assets/portada.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.por > .mi{
+    color: blue;
+    text-decoration: none;
+    position: absolute;
+    top: 1vw;
+    right: 3vw;
+    font-size: 1.2vw;
+}
+.mex{
+    font-size: 1vw;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: .5vw;
+    left: 5.5vw;
+    padding: .3vw;
+    background-color: blue;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.mex:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+.mex2{
+    position: absolute;
+    font-size: 1vw;
+    top: 7vw;
+}
+.imagen{
+    position: absolute;
+    top: 9vw;
+    width: 85%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.ret{
+    width: 5vw;
+    height: 5vw;
+    background-color: blueviolet;
+}
+#r1{
+    background-image: url('./../Assets/1.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r1:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#r2{
+    background-image: url('./../Assets/2.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r2:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#r3{
+    background-image: url('./../Assets/3.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r3:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#r4{
+    background-image: url('./../Assets/4.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r4:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#r5{
+    background-image: url('./../Assets/5.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r5:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#r6{
+    background-image: url('./../Assets/6.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r6:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#r7{
+    background-image: url('./../Assets/7.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r7:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#r8{
+    background-image: url('./../Assets/8.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r8:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#r9{
+    background-image: url('./../Assets/9.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r9:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+._fo{
+    font-size: 1vw;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: .3vw;
+}
+._fo > i{
+    color: blue;
+}
+._fo > p{
+    margin-left: .5vw;
 }
 .revista{
     background-image: url('./../Assets/hoja.jpg');
