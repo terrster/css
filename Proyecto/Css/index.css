@@ -1,0 +1,525 @@
+*{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+header{
+    background-color: darkgrey;
+    height: 11vw;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+header > h1{
+    font-size: 9.5vw;
+    font-weight: bold;
+    height: fit-content;
+    line-height: .8;
+    text-transform: uppercase;
+}
+._o{
+    color: greenyellow;
+}
+header > p{
+    position: absolute;
+    color: rgb(170, 255, 0);
+    /* background-color: white; */
+    display: inline;
+    width: fit-content;
+    height: auto;
+    font-size: 2.75vw;
+    line-height: .9;
+    left: 13vw;
+    bottom: .7vw;
+}
+/* .prin{
+    display: flex;
+} */
+.nav{
+    display: flex;
+    height: 3vw;
+    /* background-color: darkkhaki; */
+    align-items: center;
+    overflow: hidden;
+    margin-top: .3vw;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav > ul{
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+}
+.nav > ul > li{
+    font-size: 1.25vw;
+    color: white;
+    font-weight: bold;
+    width: 10vw;
+    display: inline;
+    margin: .7vw;
+    padding: .8vw;
+    background-color: greenyellow;
+    text-shadow: 0px 1px 2px rgb(146, 146, 146);
+}
+.nav > ul > li:hover{
+    background-color: darkslategray;
+}
+.nav > p{
+    text-align: center;
+    color: white;
+    display: block;
+    padding: .8vw;
+    width: 28vw;
+    background-color: darkslategray;
+    font-size: 1.25vw;
+    position: absolute;
+    right: 0;
+}
+.slide{
+    width: 100%;
+    height: 25vw;
+    margin-top: .3vw;
+    padding: 2vw;
+    background-image: url('./../Assets/noche.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: initial;
+    background-attachment: fixed;
+    /* background-color: darkorange; */
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.borde{
+    position: absolute;
+    width: 98%;
+    height: 90%;
+    border: 2px solid white;
+    z-index: 1;
+}
+.slide > h2{
+    position: absolute;
+    font-size: 2vw;
+    font-weight: 300;
+    color: white;
+    right: 17vw;
+    bottom: 12vw;
+    text-shadow: 1px 1px 2px black;
+}
+.slide > h1{
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 4.5vw;
+    font-weight: 300;
+    color: white;
+    right: 7.2vw;
+    bottom: 8vw;
+    text-shadow: 1px 1px 2px black;
+}
+.slide > p{
+    position: absolute;
+    font-size: 1.5vw;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    left: 2vw;
+    bottom: 2vw;
+}
+.cont{
+    padding: 0;
+    margin: 0;
+    height: 30vw ;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    position: relative;
+    justify-content: space-between;
+    margin: 0px 1vw 0px 1vw;
+}
+.online, .cir, .fac, .revista{
+    width: 23%;
+    height: 95%;
+    display: flex;
+    position: relative;
+}
+.online{
+    background-color: rgb(84, 1, 119);
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.viv{
+    width: auto;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 1.85vw;
+    top: 1vw;
+    margin: 0 1vw 1vw 1vw;
+    color: white;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+}
+.viv > span{
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+.rad{
+    position: relative;
+    border: 1vw solid rgb(207, 207, 207);
+    width: 17vw;
+    height: 17vw;
+    border-radius: 100%;
+    top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: darkviolet;
+    box-shadow: 0px 1px 2px rgb(0, 0, 0);
+}
+.rad > h2{
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    font-size: 3.8vw;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+}
+.rad > p{
+    position: absolute;
+    right: 1vw;
+    bottom: 4vw;
+    color: white;
+    font-weight: 400;
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+}
+.cur{
+    font-family: 'Mr Dafoe', cursive;;
+    position: absolute;
+    bottom: .5vw;
+    color: white;
+    font-weight: 400;
+    font-size: 1.8vw;
+    text-shadow: 0px 1px 1px rgb(0, 0, 0);
+}
+.cir{
+    background-color: darkslategray;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+._to{
+    position: absolute;
+    top: 1vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+._to > h2{
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 3vw;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+    line-height: .7;
+}
+._to > p{
+    color: white;
+    margin-top: .8vw;
+    font-size: 1.5vw;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+}
+.rad2{
+    position: absolute;
+    top: 7vw;
+    width: 12vw;
+    height: 12vw;
+    border: 7px solid greenyellow;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 2px black;
+}
+.rad2 > h2{
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+    font-size: 2.2vw;
+}
+.rad2 > p{
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+    font-size: 1vw;
+}
+
+._te{
+    position: absolute;
+    width: 90%;
+    color: white;
+    margin-top: .8vw;
+    font-size: 1vw;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+    text-align: center;
+    bottom: 4vw;
+}
+._te2{
+    position: absolute;
+    width: 90%;
+    color: white;
+    margin-top: .8vw;
+    font-size: 1vw;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+    text-align: center;
+    bottom: .5vw;
+}
+._te2 > h3{
+    text-transform: uppercase;
+    color: greenyellow;
+}
+.fac{
+    background-color: white;
+    border: 2px solid black;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.por{
+    position: absolute;
+    top: 1vw;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.port1{
+    width: 5vw;
+    height: 5vw;
+    background-image: url('./../Assets/portada.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.por > .mi{
+    color: blue;
+    text-decoration: none;
+    position: absolute;
+    top: 1vw;
+    right: 3vw;
+    font-size: 1.2vw;
+}
+.mex{
+    font-size: 1vw;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: .5vw;
+    left: 5.5vw;
+    padding: .3vw;
+    background-color: blue;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.mex:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+.mex2{
+    position: absolute;
+    font-size: 1vw;
+    top: 7vw;
+}
+.imagen{
+    position: absolute;
+    top: 9vw;
+    width: 85%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.ret{
+    width: 5vw;
+    height: 5vw;
+    background-color: blueviolet;
+}
+#r1{
+    background-image: url('./../Assets/1.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r1:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#r2{
+    background-image: url('./../Assets/2.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r2:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#r3{
+    background-image: url('./../Assets/3.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r3:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#r4{
+    background-image: url('./../Assets/4.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r4:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#r5{
+    background-image: url('./../Assets/5.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r5:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#r6{
+    background-image: url('./../Assets/6.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r6:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#r7{
+    background-image: url('./../Assets/7.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r7:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#r8{
+    background-image: url('./../Assets/8.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r8:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+#r9{
+    background-image: url('./../Assets/9.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#r9:hover{
+    box-shadow: 0 5px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+._fo{
+    font-size: 1vw;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: .3vw;
+}
+._fo > i{
+    color: blue;
+}
+._fo > p{
+    margin-left: .5vw;
+}
+.revista{
+    background-image: url('./../Assets/hoja.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+._ti{
+    position: absolute;
+    top: 3vw;
+    width: 90%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+._ti > h2{
+    position: absolute;
+    bottom: 1.1vw;
+    font-size: 5vw;
+    font-weight: 300;
+    line-height: .9;
+    text-transform: uppercase;
+    color: white;
+}
+._ti > h3{
+    position: absolute;
+    top: 0;
+    left: 1.25vw;
+    font-size: 2vw;
+    font-weight: 300;
+    line-height: .9;
+    text-transform: uppercase;
+    color: white;
+}
+.contacto{
+    position: absolute;
+    top: 10vw;
+    font-size: 1.4vw;
+    font-weight: 300;
+    width: 70%;
+    color: white;
+    height: 55%;
+    display: flex;
+    flex-flow: column;
+    align-content: space-between;
+    text-shadow: 1px 1px 2px black;
+}
+.contacto > .pf{
+    color: yellowgreen;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+.contacto > p{
+    margin: .7vw;
+}
