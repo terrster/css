@@ -85,13 +85,13 @@ a{
 }
 .slide{
     width: 100%;
-    height: 40vh;
+    height: 25vw;
     margin-top: .3vw;
     padding: 2vw;
     background-image: url('./../Assets/noche.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: initial;
     background-attachment: fixed;
     /* background-color: darkorange; */
     display: flex;
@@ -112,7 +112,7 @@ a{
     font-weight: 300;
     color: white;
     right: 17vw;
-    bottom: 22vh;
+    bottom: 12vw;
     text-shadow: 1px 1px 2px black;
 }
 .slide > h1{
@@ -122,7 +122,7 @@ a{
     font-weight: 300;
     color: white;
     right: 7.2vw;
-    bottom: 13vh;
+    bottom: 8vw;
     text-shadow: 1px 1px 2px black;
 }
 .slide > p{
@@ -132,33 +132,96 @@ a{
     color: white;
     text-shadow: 1px 1px 2px black;
     left: 2vw;
-    bottom: 4vh;
+    bottom: 2vw;
 }
 .cont{
     padding: 0;
     margin: 0;
-    height: 40vh ;
+    height: 30vw ;
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
+    align-items: flex-end;
+    position: relative;
+    justify-content: space-between;
+    margin: 0px 1vw 0px 1vw;
+}
+.online, .cir, .fac, .revista{
+    width: 23%;
+    height: 95%;
+    display: flex;
+    position: relative;
 }
 .online{
-    width: 25vw;
-    height: 90%;
-    background-color: tomato;
+    background-color: rgb(84, 1, 119);
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.viv{
+    width: auto;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 1.85vw;
+    top: 1vw;
+    margin: 0 1vw 1vw 1vw;
+    color: white;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+}
+.viv > span{
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+.rad{
+    position: relative;
+    border: 1vw solid rgb(207, 207, 207);
+    width: 17vw;
+    height: 17vw;
+    border-radius: 100%;
+    top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: darkviolet;
+}
+.rad > h2{
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    font-size: 3.8vw;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+}
+.rad > p{
+    position: absolute;
+    right: 1vw;
+    bottom: 4vw;
+    color: white;
+    font-weight: 400;
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px rgb(0, 0, 0);
+}
+.cur{
+    font-family: 'Mr Dafoe', cursive;;
+    position: absolute;
+    bottom: .5vw;
+    color: white;
+    font-weight: 400;
+    font-size: 1.8vw;
+    text-shadow: 0px 1px 1px rgb(0, 0, 0);
 }
 .cir{
-    width: 25vw;
-    height: 90%;
-    background-color: violet;
+    background-color: darkslategray;
 }
 .fac{
-    width: 25vw;
-    height: 90%;
-    background-color: yellow;
+    background-color: white;
+    border: 2px solid black;
 }
 .revista{
-    width: 25vw;
-    height: 90%;
-    background-color: turquoise;
+    background-image: url('./../Assets/hoja.jpg');
+    background-size: cover;
+    background-position: center;
 }
