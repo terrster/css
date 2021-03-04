@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.bgd{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgd .rotate{
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    /* background-color: tomato; */
+    transform-style: preserve-3d;
+    zoom: 4;
+    animation: rotator 10s linear infinite;
+}
+
+.bgd .rotate .esfera{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    /* background-color: blue; */
+}
+.bgd .rotate .esfera:nth-child(2){
+    transform: rotate(90deg);
+}
+.bgd .rotate .esfera:nth-child(3){
+    transform: rotate(45deg);
+}
+.bgd .rotate .esfera:nth-child(4){
+    transform: rotate(-45deg);
+}
+
+.bgd .rotate .esfera span{
+    background: radial-gradient(#f0eafc,#61cef2,#f538b9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    transform-style: preserve-3d;
+}
+
+.bgd .rotate .esfera span:nth-child(1){
+    transform: rotateY(0deg);
+}
+.bgd .rotate .esfera span:nth-child(2){
+    transform: rotateY(30deg);
+}
+.bgd .rotate .esfera span:nth-child(3){
+    transform: rotateY(60deg);
+}
+.bgd .rotate .esfera span:nth-child(4){
+    transform: rotateY(90deg);
+}
+.bgd .rotate .esfera span:nth-child(5){
+    transform: rotateY(120deg);
+}
+.bgd .rotate .esfera span:nth-child(6){
+    transform: rotateY(150deg);
+}
+
+@keyframes rotator{
+    0%{
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
