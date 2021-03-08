@@ -1,0 +1,43 @@
+ 
+  .cont {
+    position: relative;
+    margin: 1em auto;
+    width: 800px;
+    height: 500px;
+    border: 2px solid rgba(102, 102, 102,.5);
+    background: #c22bfd;
+  }
+  
+  .linea {
+    position: absolute;
+    width: 40px;
+    height: 500px;
+    /* background: black; */
+    animation: lados 5s linear infinite alternate-reverse;
+  }
+  
+  .pelota {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: rgb(255, 255, 255);
+    
+    animation: salto 3s infinite;
+  }
+ 
+  @keyframes lados {
+    from { left: 0;     }
+    to   { left: 760px; }
+  }
+  
+  @keyframes salto {
+    from, to  {
+      bottom: 0;
+      animation-timing-function: ease-out;
+    }
+    50% {
+      bottom: 460px;
+      animation-timing-function: ease-in;
+    }
+  }
