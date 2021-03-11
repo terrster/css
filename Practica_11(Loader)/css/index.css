@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: teal;
+    /* overflow: hidden; */
+}
+
+.loader{
+    width: 32vw;
+    height: 32vw;
+    background: linear-gradient(#fff1bd 0%, #ec468e 50%, #474ed7 100%);
+    animation: spin 0.5s infinite linear;
+    border-radius: 50%;
+    position: relative;
+}
+
+.loader::after{
+    content: "";
+    position: absolute;
+    background-color: teal;
+    top: 1vw;
+    left: 1vw;
+    right: 1vw;
+    bottom: 1vw;
+    border-radius: 50%;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
