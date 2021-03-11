@@ -20,7 +20,7 @@ header{
     flex-direction: column;
     margin: 0;
     padding: 0;
-    z-index: 2;
+    z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
@@ -287,11 +287,67 @@ ul li a:hover,ul li a:active{
 }
 .proyectos{
     position: relative;
-    background-color: darkcyan;
-
-    height: 120vh;
+    background-color: white;
+    height: 170vh;
     width: 100%;    
 }
+.contx{
+    position: absolute;
+    bottom: 8%;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.proyectos a{
+    position: relative;
+    width: 40%;
+    height: 40%;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.proyectos img{
+    position: absolute;
+    min-width: 100%;
+    max-height: 100%;
+
+}
+
+.proyectos a:hover::before,
+.proyectos a:hover p {
+    opacity: 1;
+}
+.proyectos a::before{    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 2;
+    transition: .7s;
+    opacity: 0;
+}
+
+.proyectos a p{
+    color: rgb(83, 83, 83);
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    font-weight: 900;
+    font-size: 1.5vw;
+    z-index: 2;
+    opacity: 0;
+    text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
 .contacto{
     position: relative;
     background-color: white;
