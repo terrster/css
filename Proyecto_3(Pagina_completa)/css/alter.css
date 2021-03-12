@@ -148,6 +148,12 @@ article a{
     font-weight: 600;
 }
 
+article a:hover{
+    color: #3b3a3a;
+    background-color: #edcd1f;
+    transition: .5s;
+}
+
 aside{
     top: 8%;
     margin: 0;
@@ -166,7 +172,7 @@ aside{
     left: 0;
     display: flex;
     flex: 1;
-    animation: hola 10s linear infinite;
+    animation: hola 50s infinite;
     
     opacity: 1;
 }
@@ -205,15 +211,31 @@ footer a:visited{
 }
 
 @keyframes hola{
-    from {
-        transform: translateX(0%);
-        transition-timing-function: ease-in-out;
-      }
+    0%{
+        left: 0;
+        transition: .5s;
+        transition-delay: 2s;
+    }
     
-      to {
-        transform: translateX(-300%);
-        transition-duration: 2s;
-        transition-timing-function: ease-in-out;
-      }
+    25%{
+        left: -100%;
+        transition: .5s;
+        transition-delay: 2s;
+    }
+    50%{
+        left: -200%;
+        transition: .5s;
+        transition-delay: 2s;
+    }
+    75%{
+        left: -300%;
+        transition: .5s;
+        transition-delay: 2s;
+    }
+    100%{
+        left: 0;
+        transition: .5s;
+        transition-delay: 2s;
+    }
 }
 

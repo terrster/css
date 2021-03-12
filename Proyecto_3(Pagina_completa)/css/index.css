@@ -288,7 +288,7 @@ ul li a:hover,ul li a:active{
 .proyectos{
     position: relative;
     background-color: white;
-    height: 170vh;
+    height: 150vh;
     width: 100%;    
 }
 .contx{
@@ -347,6 +347,64 @@ ul li a:hover,ul li a:active{
     opacity: 0;
     text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+.clientes{
+    position: relative;
+    background-color: #f7f7f7;
+    height: 50vh;
+    width: 100%;
+}
+
+.logos ul{
+    display: flex;
+    list-style: none;
+    flex: 1;
+    align-content: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.logos img{
+    width: initial;
+    height: initial;
+}
+
+.logos li{
+    position: relative;    
+}
+
+.logos li::before{    
+    content: "";
+    position: absolute;
+    top: -1%;
+    left: 0;
+    background-position: center;
+    width: 100%;
+    height:100%;
+    opacity: 0;
+    transition: .7s;
+}
+
+.logos li:nth-child(1):hover::before{
+    opacity: 1;
+    background-image: url('./../asset/lg1r.png');
+}
+.logos li:nth-child(2):hover::before{
+    opacity: 1;
+    background-image: url('./../asset/lg2r.png');
+}
+.logos li:nth-child(3):hover::before{
+    opacity: 1;
+    background-image: url('./../asset/lg3r.png');
+}
+.logos li:nth-child(4):hover::before{
+    opacity: 1;
+    background-image: url('./../asset/lg4r.png');
+}
+.logos li:nth-child(5):hover::before{
+    opacity: 1;
+    background-image: url('./../asset/lg5r.png');
+}
 
 .contacto{
     position: relative;
@@ -354,6 +412,42 @@ ul li a:hover,ul li a:active{
     height: 120vh;
     width: 100%;    
 }
+.mapouter{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+footer{
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-content: center;
+}
+footer p{
+    position: absolute;
+    font-family: lato,sans-serif;
+    font-weight: 300;
+    left: 15%;
+    bottom: 5%;
+}
+.iz{
+    position: absolute;
+    top: 0;
+    right: 20%;
+}
+footer a{
+    margin-left: .5vw;
+    margin-right: .5vw;
+    color: black;
+    font-size: 1.7vw;
+}
+
+footer a:visited{
+    color: black;
+}
+
 
 
 
