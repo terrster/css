@@ -563,12 +563,14 @@ label, input, textarea {
 }
 .chat:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5), 0 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
   }
 .chat i{
     position: absolute;
     top: 25%;
     right: 25%;
 }
+
 
 footer{
     position: relative;
